@@ -3,6 +3,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 :root {
   --light-blue: rgb(70, 127, 232);
@@ -13,7 +14,7 @@ body {
   justify-content: center;
   font-family: "montserrat", serif;
   /* align-items: center; */
-  background-color: rgb(126, 74, 47);
+  background-color: rgb(249, 249, 249);
   /* width: 80%; */
 }
 main {
@@ -49,6 +50,7 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
 }
 .profile-nav > p {
   padding: 5px;
@@ -171,7 +173,7 @@ hero > .hero-text {
   flex-direction: row;
 }
 .users {
-  border: 1px solid rgb(79, 79, 79);
+  border: 0.1rem solid rgb(225, 225, 225);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,10 +190,15 @@ hero > .hero-text {
 }
 
 .sponsers {
+  /* border: 1px solid; */
+  /* padding-top: 1000vh; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 5rem;
+}
+.logo {
+  width: 6rem;
 }
 
 .subscribe {
@@ -205,9 +212,15 @@ hero > .hero-text {
     rgb(230, 13, 121) 70%
   );
 }
+.subscribe-section {
+  display: flex;
+  /* border-radius: 10rem; */
+}
+
 .submit {
   padding: 10px;
   background-color: var(--light-blue);
+  border: 0px;
 }
 .email {
   padding: 10px;
@@ -272,6 +285,8 @@ hero > .hero-text {
   align-content: center;
   padding-top: 5rem;
   height: 80vh;
+  background-color: rgb(57, 55, 71);
+  /* border: 2px solid black; */
 }
 .branch-1 {
   text-align: start;
@@ -286,8 +301,142 @@ hero > .hero-text {
   width: 35vw;
 }
 
+.appointment {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 70vw; */
+  padding: 0vh 15vw;
+  /* flex-wrap: wrap; */
+  margin-top: -250px;
+}
+.appointment-image {
+  flex-basis: 20%;
+  float: left;
+  /* border: 2px solid blue; */
+}
+.appointment-image > img {
+  width: 18vw;
+  height: 70vh;
+}
+.appointment-form {
+  background-color: white;
+  flex-basis: 80%;
+  float: right;
+  /* border: 2px solid green; */
+  padding: 16px;
+  height: 70vh;
+  margin-top: -0.25rem;
+
+  /* display: flex; */
+}
 /* @media screen and (max-width: 700px) {
   .note-div {
     margin-left: 4rem;
   }
 } */
+
+/* Add padding to containers */
+form {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  height: 67vh;
+}
+
+/* Full-width input fields */
+input,
+select {
+  width: 100%;
+  padding: 15px;
+  /* margin: 5px 0 22px 0; */
+  display: inline-block;
+  /* justify-content: space-around; */
+  border: none;
+  background: #f1f1f1;
+}
+
+input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+/* hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+} */
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.consult {
+  /* border: 1px solid; */
+  padding: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+}
+.dots > h2,
+p {
+  padding: 1rem;
+}
+.contact1 {
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  padding: 0vh 6vw;
+  background-color: var(--light-blue);
+}
+.contact-text {
+  color: white;
+}
+.references {
+  display: flex;
+  justify-content: center;
+  /* align-content: flex-start; */
+  text-align: start;
+  padding-top: 3rem;
+}
+th,
+td {
+  padding: 0.5rem 2rem;
+  /* border-spacing: 10rem; */
+}
+footer {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-around;
+  /* align-content: center; */
+}
+.footer-text > p {
+  font-weight: 200;
+}
+.footer-icons {
+  padding: 1rem;
+  /* gap: 10rem; */
+}

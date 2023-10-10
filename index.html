@@ -143,21 +143,21 @@
       </div>
 
       <div class="sponsers">
-        <img src="images/Vector.png" alt="" />
-        <img src="images/Vector-1.png" alt="" />
-        <img src="images/Vector-2.png" alt="" />
-        <img src="images/Vector-3.png" alt="" />
-        <img src="images/Vector-4.png" alt="" />
-        <img src="images/Vector-5.png" alt="" />
+        <img class="logo" src="images/Vector.png" alt="" />
+        <img class="logo" src="images/Vector-1.png" alt="" />
+        <img class="logo" src="images/Vector-2.png" alt="" />
+        <img class="logo" src="images/Vector-3.png" alt="" />
+        <img class="logo" src="images/Vector-4.png" alt="" />
+        <img class="logo" src="images/Vector-5.png" alt="" />
       </div>
       <div class="subscribe">
         <h3>
           Subscribe For Latest <br />
           Newsletter
         </h3>
-        <section>
+        <section class="subscribe-section">
           <input class="email" placeholder="Your Email" />
-          <button class="submit" type="submit" value="submit">SubScribe</button>
+          <button class="submit" type="submit" value="submit">Subscribe</button>
         </section>
       </div>
       <div class="pricing">
@@ -274,7 +274,9 @@
                 Email and community Support
               </p>
             </div>
-            <button class="pricing-submit" type="submit">Try It for free</button>
+            <button class="pricing-submit" type="submit">
+              Try It for free
+            </button>
           </div>
         </div>
       </div>
@@ -297,27 +299,98 @@
           <img src="/images/contact.png" alt="" />
         </div>
         <div class="appointment-form">
-          <form>
-            <input type="" placeholder="Full Name" />
-            <input type="" placeholder="Full Name" />
-            <input type="" placeholder="Full Name" />
-            <input type="" placeholder="Full Name" />
+          <form action="submit">
+            <h1>Book An Appointment</h1>
 
-            <button type="submit">Book an Appointment</button>
+            <!-- <hr /> -->
+
+            <label for="name"><p>Name*</p></label>
+            <input
+              type="text"
+              placeholder="Enter Full Name"
+              name="Name"
+              required
+            />
+
+            <label for="Email"><p>Email*</p></label>
+            <input
+              type="Email"
+              placeholder="Enter Email"
+              name="Email"
+              required
+            />
+
+            <label for="Department"><p>Department*</p></label>
+            <select id="Department">
+              <option selected value=""><b>please select</b></option>
+            </select>
+            <label for="Time"><pb>Time*</pb></label>
+            <select id="Time">
+              <option selected value=""><b>4.00 Available</b></option>
+            </select>
+            <!-- <hr /> -->
+
+            <button type="submit" class="registerbtn">Register</button>
           </form>
         </div>
       </div>
       <div class="consult">
-        <div>
+        <div class="dots">
           <h2>Consulting Agency For your Business</h2>
-          <p>Quick fox jumps over the Lazy Dog</p>
+          <p>The Quick fox jumps over the Lazy Dog</p>
         </div>
-        <button type="submit">Contact us</button>
+        <div class="contact1"><p class="contact-text">Contact us</p></div>
       </div>
       <div class="references">
-        <table></table>
+        <table>
+          <tr>
+            <th>Company Info</th>
+            <th>Legal</th>
+            <th>Features</th>
+            <th>Resources</th>
+            <th>Get In Touch</th>
+          </tr>
+          <tr>
+            <td>About Us</td>
+            <td>About Us</td>
+            <td>Business Marketing</td>
+            <td>IOS & Android</td>
+            <td><ion-icon name="call-outline"></ion-icon>(480) 555-0103</td>
+          </tr>
+          <tr>
+            <td>Carrier</td>
+            <td>carrier</td>
+            <td>User analytic</td>
+            <td>Watch and demo</td>
+            <td>
+              <ion-icon name="location-outline"></ion-icon>4517 Washington Ave
+            </td>
+          </tr>
+          <tr>
+            <td>About Us</td>
+            <td>About Us</td>
+            <td>Business Marketing</td>
+            <td>IOS & Android</td>
+            <td><ion-icon name="mail-outline"></ion-icon>bcaleb98@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>Blog</td>
+            <td>Unlimited support</td>
+            <td>API</td>
+          </tr>
+        </table>
       </div>
     </main>
-    <footer><p>made with Love from Figmaland All right reserved</p></footer>
+    <footer>
+      <div class="footer-text">
+        <p>made with Love from Figmaland All right reserved</p>
+      </div>
+      <div class="footer-icons">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-Twitter"></ion-icon>
+      </div>
+    </footer>
   </body>
 </html>

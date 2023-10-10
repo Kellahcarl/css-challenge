@@ -7,6 +7,7 @@
 }
 :root {
   --light-blue: rgb(70, 127, 232);
+  --pricing-blue: rgb(31, 31, 57);
 }
 body {
   display: flex;
@@ -247,12 +248,11 @@ hero > .hero-text {
   justify-content: center;
   padding-bottom: 5rem;
   padding-top: 5rem;
-  
 }
 .tabs {
   /* border: 1px solid blue; */
   text-align: center;
-  padding:0rem 2rem;
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -260,7 +260,7 @@ hero > .hero-text {
   border: 0.1rem solid var(--light-blue);
   border-radius: 0.5rem;
 }
-.tabs:hover{
+.tabs:hover {
   background-color: rgb(31, 31, 57);
   color: white;
   /* padding-top: 6rem; */
@@ -273,7 +273,6 @@ hero > .hero-text {
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  
 }
 .points {
   display: flex;
@@ -408,8 +407,7 @@ input:focus {
   justify-content: space-evenly;
   /* border: 1px solid; */
 }
-.dots > h2,
-p {
+.dots {
   padding: 1rem;
 }
 .contact1 {
@@ -448,4 +446,90 @@ footer {
 .footer-icons {
   padding: 1rem;
   /* gap: 10rem; */
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 700px) and (max-width : 800px) {
+  .top-div {
+    background-size: contain;
+  }
+  nav {
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    padding-bottom: 1rem;
+  }
+  .profile-nav {
+    font-size: small;
+    /* border: 1px solid green; */
+  }
+  .member {
+    padding: 0.5rem;
+    border-radius: 10px;
+    /* height: 5vh; */
+    /* border: 1px solid; */
+  }
+  hero {
+    padding-top: 5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    font-size: small;
+    height: 30vh;
+  }
+  .users {
+    font-size: small;
+  }
+  .sponsers {
+    padding: 10rem 0rem;
+  }
+  .pricing {
+    padding: 2rem;
+  }
+  .pricing-top {
+    padding-top: 4rem;
+  }
+  .pricing-top > p {
+    padding-top: 3rem;
+    font-size: small;
+  }
+  .pricing-tabs {
+    padding: 0rem;
+  }
+  .tabs {
+    padding: 1rem;
+    height: 25rem;
+    font-size: small;
+  }
+  .branch-1 {
+    font-size: small;
+    /* border: 1px solid red; */
+    padding: 2rem;
+  }
+  .branch-image {
+    padding: 2rem;
+  }
+  .branch-img {
+    width: 40vw;
+  }
+  .appointment {
+    font-size: small;
+  }
+  .consult {
+    /* border: 1px solid red; */
+    padding: 3rem;
+    font-size: small;
+  }
+  .references{
+    text-align: center;
+    font-size: small;
+    /* padding: 3rem */
+  }
+  th, td {
+    padding: 0.5rem 1rem;
+    /* border-spacing: 10rem; */
+}
+.footer-text{
+  font-size: smaller;
+}
 }

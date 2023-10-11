@@ -193,7 +193,7 @@ hero > .hero-text {
 }
 
 .sponsers {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* border: 1px solid; */
   margin-top: 5rem;
   display: flex;
@@ -207,9 +207,11 @@ hero > .hero-text {
 }
 
 .subscribe {
-  
+  min-width: 80vw;
+  margin: 0rem 2rem;
   display: flex;
   justify-content: space-around;
+  align-content: center;
   padding: 2rem;
   color: white;
   background: linear-gradient(
@@ -233,7 +235,7 @@ hero > .hero-text {
   /* padding-left: 500px; */
 }
 .pricing {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;

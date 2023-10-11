@@ -449,7 +449,7 @@ footer {
 }
 
 /* When the browser is at least 600px and above */
-@media screen and (min-width: 700px) and (max-width : 800px) {
+@media screen and (min-width: 700px) and (max-width: 800px) {
   .top-div {
     background-size: contain;
   }
@@ -520,16 +520,170 @@ footer {
     padding: 3rem;
     font-size: small;
   }
-  .references{
+  .references {
     text-align: center;
     font-size: small;
     /* padding: 3rem */
   }
-  th, td {
+  th,
+  td {
     padding: 0.5rem 1rem;
     /* border-spacing: 10rem; */
+  }
+  .footer-text {
+    font-size: smaller;
+  }
 }
-.footer-text{
-  font-size: smaller;
-}
+
+@media screen and (max-width: 699px) {
+  * {
+    font-size: small;
+  }
+  .top-div {
+    background-size: cover;
+  }
+
+  .brand-name > h1 {
+    font-size: 2rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  hero {
+    padding-top: 5rem;
+  }
+  hero > h1 {
+    font-weight: 1000;
+    font-size: 2rem;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .card {
+    width: 80%;
+  }
+  .people-icon {
+    font-size: 30px;
+  }
+  .first-div {
+    padding: 2rem;
+    /* border: 1px solid red; */
+  }
+  .div-icons {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+  .industry {
+    /* border: 1px solid red; */
+    padding-top: 2rem;
+    height: 100%;
+    padding-bottom: 0rem;
+  }
+  .industry-top {
+    height: 100%;
+  }
+  .industry-top > h1 {
+    font-size: 2rem;
+  }
+  .industry-user {
+    /* border: 1px solid blue; */
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .users {
+    flex-direction: row;
+    height: 100%;
+    padding: 2rem 1rem;
+  }
+  .star-icons-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sponsers {
+    padding: 3rem;
+    width: 100%;
+  }
+  .logo {
+    width: 15%;
+  }
+  .subscribe {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0rem 2rem;
+  }
+  .pricing-top {
+    padding: 2rem;
+  }
+  .pricing-top > h1 {
+    font-size: 2rem;
+  }
+  .pricing-top > p {
+    padding-top: 2rem;
+  }
+  .pricing-tabs {
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .tabs {
+    height: 20rem;
+  }
+  .tabs > h2,
+  .tabs > .price-tab > h2 {
+    font-size: 1.5rem;
+  }
+  .branches {
+    padding-top: 0rem;
+    height: 100%;
+    flex-direction: column;
+  }
+  .branch-1 {
+    padding: 2rem;
+    /* border: 1px solid red; */
+  }
+  .branch-1 > h1 {
+    font-size: 1.5rem;
+  }
+  .branch-image {
+    padding: 2rem;
+  }
+  .branch-img {
+    width: 100%;
+  }
+  .appointment {
+    margin-top: 0px;
+    padding-top: 2rem;
+    /* border: 1px solid red; */
+  }
+  .appointment-image {
+    flex-basis: 30%;
+  }
+  .appointment-image > img {
+    width: 100%;
+    height: 67vh;
+  }
+  .appointment-form {
+    flex-basis: 70%;
+    padding: 0px;
+    margin-top: 0rem;
+  }
+  form {
+    height: 67vh;
+  }
+  .consult {
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .dots {
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .dots1 {
+    font-size: 1.5rem;
+  }
+  .references {
+    overflow-x: auto;
+  }
 }

@@ -113,10 +113,18 @@ hero > .hero-text {
   background-color: white;
   padding: 30px;
   min-width: 10vh;
+  transition: background-color 0.3s;
+}
+.card:hover {
+  background-color: var(--pricing-blue);
+  color: white;
 }
 .people-icon {
   color: var(--light-blue);
   font-size: 50px;
+}
+.card:hover .people-icon {
+  color: white;
 }
 
 .blue-card {
@@ -202,8 +210,8 @@ hero > .hero-text {
   padding: 5rem;
 }
 .logo {
-  width: 15%;
-  padding: 0.5rem
+  width: 10%;
+  padding: 0.5rem;
 }
 
 .subscribe {
@@ -256,6 +264,7 @@ hero > .hero-text {
   justify-content: center;
   /* padding: 5rem; */
   /* padding-top: 5rem; */
+  padding-bottom: 5rem;
 }
 .tabs {
   /* border: 1px solid blue; */
@@ -268,10 +277,14 @@ hero > .hero-text {
   height: 35rem;
   border: 0.1rem solid var(--light-blue);
   border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  transition: height 0.3s;
 }
 .tabs:hover {
   background-color: rgb(31, 31, 57);
   color: white;
+  /* height: 40rem; */
+  transform: scaleY(1.1);
   /* padding-top: 6rem; */
 }
 
@@ -294,7 +307,6 @@ hero > .hero-text {
   background-color: var(--light-blue);
   border: 0.5px;
   border-radius: 0.5rem;
-  
 }
 .branches {
   /* border: 2px solid red ; */
@@ -311,7 +323,8 @@ hero > .hero-text {
   text-align: start;
   /* border: 2px solid blue; */
   /* padding: 5rem; */
-  padding: 2rem 2rem
+  padding: 2rem 2rem;
+  color: white;
 }
 
 .branch-image {
@@ -454,7 +467,7 @@ td {
   justify-content: space-around;
   align-content: center;
 }
-.footer-text{
+.footer-text {
   padding: 1rem;
 }
 .footer-text > p {
@@ -494,7 +507,6 @@ td {
     padding: 1.5rem;
     font-size: small;
     height: 30vh;
-    
   }
   .users {
     font-size: small;
@@ -549,7 +561,6 @@ td {
     padding: 0.5rem 1rem;
     /* border-spacing: 10rem; */
   }
- 
 }
 
 @media screen and (max-width: 699px) {
@@ -588,6 +599,7 @@ td {
   }
   .first-div {
     padding: 2rem;
+    flex-direction: column;
     /* border: 1px solid red; */
   }
   .div-icons {
@@ -612,13 +624,16 @@ td {
     justify-content: space-evenly;
   }
   .users {
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
     height: 100%;
     padding: 2rem 1rem;
+    flex-wrap: wrap;
   }
+
   .star-icons-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
   }
   .sponsers {
     padding: 3rem;

@@ -247,8 +247,8 @@ hero > .hero-text {
   display: flex;
   /* border: 1px solid blue; */
   justify-content: center;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding: 5rem;
+  /* padding-top: 5rem; */
 }
 .tabs {
   /* border: 1px solid blue; */
@@ -470,7 +470,7 @@ footer {
     /* border: 1px solid; */
   }
   hero {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   .card {

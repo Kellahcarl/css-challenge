@@ -25,6 +25,7 @@ main {
   background-image: url("/images/hero.png");
   /* background-color: blue; */
   background-size: cover;
+  background-position: center;
   height: 80vh;
   /* position: relative; */
 
@@ -83,7 +84,7 @@ hero > .hero-text {
 .hero-btn {
   display: flex;
   /* border:2px solid blue; */
-  /* gap: rem; */
+  gap: 2rem;
 }
 .quote {
   padding: 0.7rem;
@@ -98,20 +99,20 @@ hero > .hero-text {
 }
 .card-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   /* position: absolute; */
   /* bottom: -15%; */
   /* background-color: yellow; */
-  margin-top: -100px;
+  margin-top: -60px;
 }
 
 .card {
   background-color: white;
   padding: 30px;
-  width: 20%;
+  min-width: 10vh;
 }
 .people-icon {
   color: var(--light-blue);
@@ -192,18 +193,21 @@ hero > .hero-text {
 }
 
 .sponsers {
+  border: 1px solid red;
   /* border: 1px solid; */
-  /* padding-top: 1000vh; */
+  margin-top: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 5rem;
 }
 .logo {
-  width: 6rem;
+  width: 15%;
+  padding: 0.5rem
 }
 
 .subscribe {
+  
   display: flex;
   justify-content: space-around;
   padding: 2rem;
@@ -229,10 +233,11 @@ hero > .hero-text {
   /* padding-left: 500px; */
 }
 .pricing {
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .pricing-top {
   text-align: center;
@@ -247,7 +252,7 @@ hero > .hero-text {
   display: flex;
   /* border: 1px solid blue; */
   justify-content: center;
-  padding: 5rem;
+  /* padding: 5rem; */
   /* padding-top: 5rem; */
 }
 .tabs {
@@ -255,6 +260,7 @@ hero > .hero-text {
   text-align: center;
   padding: 0rem 2rem;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: space-evenly;
   height: 35rem;
@@ -286,13 +292,15 @@ hero > .hero-text {
   background-color: var(--light-blue);
   border: 0.5px;
   border-radius: 0.5rem;
+  
 }
 .branches {
-  /* border: 2px solid black ; */
+  /* border: 2px solid red ; */
   display: flex;
   justify-content: space-around;
   align-content: center;
   padding-top: 5rem;
+  /* padding-bottom:10 rem; */
   height: 80vh;
   background-color: rgb(57, 55, 71);
   /* border: 2px solid black; */
@@ -300,8 +308,10 @@ hero > .hero-text {
 .branch-1 {
   text-align: start;
   /* border: 2px solid blue; */
-  padding: 5rem;
+  /* padding: 5rem; */
+  padding: 2rem 2rem
 }
+
 .branch-image {
   /* border: 2px solid green; */
   padding: 5rem;
@@ -318,7 +328,7 @@ hero > .hero-text {
   /* width: 70vw; */
   padding: 0vh 15vw;
   /* flex-wrap: wrap; */
-  margin-top: -250px;
+  margin-top: -150px;
 }
 .appointment-image {
   flex-basis: 20%;
@@ -429,20 +439,25 @@ input:focus {
   /* align-content: flex-start; */
   text-align: start;
   padding-top: 3rem;
+  /* border: 1px solid red; */
 }
 th,
 td {
   padding: 0.5rem 2rem;
   /* border-spacing: 10rem; */
 }
-footer {
+.footer {
   /* border: 1px solid; */
   display: flex;
   justify-content: space-around;
-  /* align-content: center; */
+  align-content: center;
+}
+.footer-text{
+  padding: 1rem;
 }
 .footer-text > p {
   font-weight: 200;
+  font-size: smaller;
 }
 .footer-icons {
   padding: 1rem;
@@ -450,9 +465,9 @@ footer {
 }
 
 /* When the browser is at least 600px and above */
-@media screen and (min-width: 700px) and (max-width: 800px) {
+@media screen and (min-width: 700px) and (max-width: 950px) {
   .top-div {
-    background-size: contain;
+    background-size: cover;
   }
   nav {
     flex-direction: column;
@@ -477,6 +492,7 @@ footer {
     padding: 1.5rem;
     font-size: small;
     height: 30vh;
+    
   }
   .users {
     font-size: small;
@@ -531,9 +547,7 @@ footer {
     padding: 0.5rem 1rem;
     /* border-spacing: 10rem; */
   }
-  .footer-text {
-    font-size: smaller;
-  }
+ 
 }
 
 @media screen and (max-width: 699px) {
@@ -561,6 +575,7 @@ footer {
   }
   .card-container {
     flex-direction: column;
+    align-content: center;
     gap: 0rem;
   }
   .card {

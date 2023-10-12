@@ -365,11 +365,6 @@ hero > .hero-text {
 
   /* display: flex; */
 }
-/* @media screen and (max-width: 700px) {
-  .note-div {
-    margin-left: 4rem;
-  }
-} */
 
 /* Add padding to containers */
 form {
@@ -452,13 +447,19 @@ input:focus {
   display: flex;
   justify-content: center;
   /* align-content: flex-start; */
-  text-align: start;
+  text-align: center;
   padding-top: 3rem;
   /* border: 1px solid red; */
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 th,
 td {
-  padding: 0.5rem 2rem;
+  padding: 1rem;
+  text-align: left;
+  /* border: 1px solid #ccc; */
   /* border-spacing: 10rem; */
 }
 .footer {
@@ -559,6 +560,8 @@ td {
   th,
   td {
     padding: 0.5rem 1rem;
+    width: 20%;
+
     /* border-spacing: 10rem; */
   }
 }
@@ -688,24 +691,27 @@ td {
     width: 100%;
   }
   .appointment {
+    flex-direction: column;
     margin-top: 0px;
     padding-top: 2rem;
     /* border: 1px solid red; */
   }
   .appointment-image {
-    flex-basis: 30%;
+    display: none;
+    /* flex-basis: 30%; */
   }
-  .appointment-image > img {
-    width: 100%;
-    height: 67vh;
-  }
+
   .appointment-form {
+    background-image: url(/images/contact.png);
+    background-position: center;
+    background-size: cover;
     flex-basis: 70%;
     padding: 0px;
     margin-top: 0rem;
+    min-width: 80vw;
   }
   form {
-    height: 67vh;
+    width: 100%;
   }
   .consult {
     padding: 3rem;
@@ -720,5 +726,15 @@ td {
   }
   .references {
     overflow-x: auto;
+    border: 1px solid red;
+  }
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  th {
+    font-weight: bold;
   }
 }
